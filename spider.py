@@ -1,4 +1,3 @@
-#CrawUnivRankingB.py
 import requests
 from bs4 import BeautifulSoup
 import bs4
@@ -71,7 +70,7 @@ def main():
     
 
     for url1,url2 in zip(infoUrls,stuUrls):
-        time.sleep(2)
+        time.sleep(2)                        #休眠一下防止爬太快ip被封
         i+=1
         print("Search University Information: ",str(i)+"/2666")
         name,loc=findInfo(url1)
